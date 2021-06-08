@@ -141,6 +141,7 @@
                 <artifactId>tomee-maven-plugin</artifactId>
                 <version>7.1.1</version>
                 <configuration>
+                    <config>${project.basedir}/src/main/tomee/conf</config>
                     <tomeeClassifier>webprofile</tomeeClassifier>
                     <context>ROOT</context>
                     <synchronization>
