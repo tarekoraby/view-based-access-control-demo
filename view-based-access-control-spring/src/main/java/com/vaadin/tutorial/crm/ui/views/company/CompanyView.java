@@ -2,10 +2,8 @@ package com.vaadin.tutorial.crm.ui.views.company;
 
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouterLink;
 
-@Route("companies")
 public class CompanyView extends VerticalLayout {
 
     public CompanyView() {

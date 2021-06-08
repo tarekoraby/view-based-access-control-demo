@@ -11,6 +11,5 @@
 
     <modules>
         <module>view-based-access-control-cdi</module>
-        <module>view-based-access-control-spring</module>
     </modules>
 </project>

@@ -6,12 +6,6 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <parent>
-    <groupId>com.vaadin</groupId>
-    <artifactId>view-based-access-control-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
-
   <properties>
     <java.version>8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
