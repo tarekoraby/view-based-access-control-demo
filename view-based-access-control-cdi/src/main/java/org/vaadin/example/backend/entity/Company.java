@@ -1,38 +1,33 @@
 package org.vaadin.example.backend.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-public class Company extends AbstractEntity {
-  private String name;
+public class Company {
+  private final String name;
+  private final String description;
+  private final String feedback;
+  private final List<Contact> employees = new ArrayList<>();
 
-  @OneToMany(mappedBy = "company", fetch = FetchType.EAGER)
-  private List<Contact> employees = new LinkedList<>();
-
-  public Company() {
-  }
-
-  public Company(String name) {
-    setName(name);
+  public Company(String name, String description, String feedback) {
+    this.name = name;
+    this.description = description;
+    this.feedback = feedback;
   }
 
   public String getName() {
     return name;
   }
 
-  public void setName(String name) {
-    this.name = name;
-  }
-
   public List<Contact> getEmployees() {
     return employees;
   }
 
-  public void setEmployees(List<Contact> employees) {
-    this.employees = employees;
+  public String getDescription() {
+    return description;
+  }
+
+  public String getFeedback() {
+    return feedback;
   }
 }

@@ -2,11 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example</groupId>
-    <artifactId>project-base-flow-cdi</artifactId>
-    <name>Project base for Vaadin Flow and CDI</name>
+    <artifactId>view-based-access-control-cdi</artifactId>
+    <name>View-based access control demo for CDI</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+
+    <parent>
+        <groupId>com.vaadin</groupId>
+        <artifactId>view-based-access-control-demo</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -18,7 +23,7 @@
         <!-- Dependencies -->
 
         <vaadin.version>21.0-SNAPSHOT</vaadin.version>
-        <flow.version>8.0-SNAPSHOT</flow.version>
+        <flow.version>8.0.0.alpha4</flow.version>
     </properties>
 
     <repositories>
@@ -158,8 +163,8 @@
             -->
             <plugin>
                 <groupId>com.vaadin</groupId>
-                <artifactId>flow-maven-plugin</artifactId>
-                <version>${flow.version}</version>
+                <artifactId>vaadin-maven-plugin</artifactId>
+                <version>${vaadin.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -179,7 +184,7 @@
                 <plugins>
                     <plugin>
                         <groupId>com.vaadin</groupId>
-                        <artifactId>flow-maven-plugin</artifactId>
+                        <artifactId>vaadin-maven-plugin</artifactId>
                         <executions>
                             <execution>
                                 <goals>

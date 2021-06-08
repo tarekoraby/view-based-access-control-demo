@@ -32,7 +32,9 @@ public class ContactService {
                     Contact contact = new Contact();
                     contact.setFirstName(split[0]);
                     contact.setLastName(split[1]);
-                    contact.setCompany(companies.get(r.nextInt(companies.size())));
+                    Company company = companies.get(r.nextInt(companies.size()));
+                    company.getEmployees().add(contact);
+                    contact.setCompany(company);
                     contact.setStatus(Contact.Status.values()[r.nextInt(Contact.Status.values().length)]);
                     String email = (contact.getFirstName() + "." + contact.getLastName() + "@" + contact.getCompany().getName().replaceAll("[\\s-]", "") + ".com").toLowerCase();
                     contact.setEmail(email);

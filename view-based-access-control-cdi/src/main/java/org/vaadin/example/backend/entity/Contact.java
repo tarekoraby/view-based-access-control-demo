@@ -1,40 +1,15 @@
 package org.vaadin.example.backend.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
-@Entity
-public class Contact extends AbstractEntity implements Cloneable {
+public class Contact {
 
     public enum Status {
         ImportedLead, NotContacted, Contacted, Customer, ClosedLost
     }
 
-    @NotNull
-    @NotEmpty
     private String firstName = "";
-
-    @NotNull
-    @NotEmpty
     private String lastName = "";
-
-    @ManyToOne
-    @JoinColumn(name = "company_id")
     private Company company;
-
-    @Enumerated(EnumType.STRING)
-    @NotNull
     private Contact.Status status;
-
-    @Email
-    @NotNull
-    @NotEmpty
     private String email = "";
 
     public String getEmail() {
