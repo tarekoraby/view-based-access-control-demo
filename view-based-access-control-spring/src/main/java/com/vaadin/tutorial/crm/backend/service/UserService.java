@@ -14,10 +14,12 @@ public class UserService {
     private static final Collection<User> users = new ArrayList<>(2);
 
     static {
-        User user = new User("user", "user", Collections.singleton("USER"));
+        User user = new User("user", "{noop}user", Collections.singleton(
+                "USER"));
         users.add(user);
 
-        User admin = new User("admin", "admin", Collections.singleton("ADMIN"));
+        User admin = new User("admin", "{noop}admin", Collections.singleton(
+                "ADMIN"));
         users.add(admin);
     }
 
