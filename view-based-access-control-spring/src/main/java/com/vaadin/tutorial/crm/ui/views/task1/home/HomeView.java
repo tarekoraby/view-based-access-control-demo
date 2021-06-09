@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.crm.ui.views.home;
+package com.vaadin.tutorial.crm.ui.views.task1.home;
 
 import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.html.H1;
@@ -6,7 +6,6 @@ import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.tutorial.crm.ui.MainLayout;
 
 @PageTitle("Vaadin CRM - Home")

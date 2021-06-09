@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.crm.ui.views.dashboard;
+package com.vaadin.tutorial.crm.ui.views.task1.dashboard;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.charts.Chart;
@@ -13,7 +13,6 @@ import com.vaadin.tutorial.crm.backend.service.CompanyService;
 import com.vaadin.tutorial.crm.backend.service.ContactService;
 import com.vaadin.tutorial.crm.ui.MainLayout;
 
-import javax.annotation.security.RolesAllowed;
 import java.util.Map;
 
 @PageTitle("Dashboard | Vaadin CRM")

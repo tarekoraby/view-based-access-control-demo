@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.crm.ui.views.list;
+package com.vaadin.tutorial.crm.ui.views.task1.list;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

@@ -9,9 +9,9 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.HighlightConditions;
 import com.vaadin.flow.router.RouterLink;
-import com.vaadin.tutorial.crm.ui.views.dashboard.DashboardView;
-import com.vaadin.tutorial.crm.ui.views.home.HomeView;
-import com.vaadin.tutorial.crm.ui.views.list.ListView;
+import com.vaadin.tutorial.crm.ui.views.task1.dashboard.DashboardView;
+import com.vaadin.tutorial.crm.ui.views.task1.home.HomeView;
+import com.vaadin.tutorial.crm.ui.views.task1.list.ListView;
 
 @CssImport("./styles/shared-styles.css")
 public class MainLayout extends AppLayout {

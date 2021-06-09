@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.crm.ui.views.company;
+package com.vaadin.tutorial.crm.ui.views.task2.company;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
