@@ -11,7 +11,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <vaadin.version>21.0-SNAPSHOT</vaadin.version>
+    <vaadin.version>21.0.0.alpha4</vaadin.version>
     <flow.version>8.0.0.alpha4</flow.version>
   </properties>
 
@@ -93,7 +93,7 @@
     <dependency>
       <groupId>com.vaadin</groupId>
       <artifactId>vaadin-spring</artifactId>
-      <version>18.0-SNAPSHOT</version>
+      <version>18.0.0.alpha2</version>
     </dependency>
     <dependency>
       <groupId>com.vaadin</groupId>
