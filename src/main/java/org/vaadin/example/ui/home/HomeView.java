@@ -1,5 +1,7 @@
 package org.vaadin.example.ui.home;
 
+import javax.annotation.security.PermitAll;
+
 import org.vaadin.example.MainLayout;
 
 import com.vaadin.flow.component.Html;
@@ -8,9 +10,11 @@ import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 @PageTitle("Vaadin CRM - Home")
 @Route(value = "", layout = MainLayout.class)
+@AnonymousAllowed
 public class HomeView extends VerticalLayout {
 
     public HomeView() {
