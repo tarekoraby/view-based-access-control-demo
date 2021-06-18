@@ -33,7 +33,6 @@ public class MainLayout extends AppLayout {
         logo.addClassName("logo");
 
         HorizontalLayout header;
-        System.out.println("xxxx" + securityService.getAuthenticatedUser());
 
         if (securityService.getAuthenticatedUser() != null) {
             Button logout = new Button("Logout", click ->
